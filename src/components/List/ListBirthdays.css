@@ -1,0 +1,73 @@
+body {
+  background-color: white !important; 
+}
+
+.container {
+  /* width: 80%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.table-container {
+  width: 105%;
+  margin-top: -20px;
+  overflow-x: auto;
+}
+
+.members-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.members-table th,
+.members-table td {
+  padding: 15px; 
+  text-align: center;
+  border: 1px solid #ddd;
+  white-space: nowrap;
+}
+
+.members-table th {
+  background-color: #f4f4f4;
+  cursor: pointer; 
+}
+
+.members-table th.sorted-asc {
+  border-bottom: 1.5px solid #333; 
+}
+
+.members-table th.sorted-desc {
+  border-top: 1.5px solid #333; 
+}
+
+.members-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.members-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.remove-button {
+  background-color: #ff4c4c;
+  color: white;
+  padding: 6px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 2px;
+}
+
+.remove-button:hover {
+  background-color: #ff1c1c;
+}
